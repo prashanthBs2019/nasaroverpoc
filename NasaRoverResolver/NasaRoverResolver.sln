@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2002
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nasa.Rover.UI", "Nasa.Rover.UI\Nasa.Rover.UI.csproj", "{F630824E-EE67-4B7A-B6A0-BECDE481CD2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nasa.Rover.UI.Tests", "Nasa.Rover.UI.Tests\Nasa.Rover.UI.Tests.csproj", "{340F37EA-72B7-49DA-A72C-C4E1DD264AED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nasa.Rover.UnitTest", "Nasa.Rover.UnitTest\Nasa.Rover.UnitTest.csproj", "{5B4D6234-2CB1-46E3-AFBF-6BE44C3BA324}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nasa.Rover.Service", "Nasa.Rover.Service\Nasa.Rover.Service.csproj", "{676028C4-62BF-4E13-A0E8-B6B14FFB98F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nasa.Rover.DataTransferObject", "Nasa.Rover.DataTransferObject\Nasa.Rover.DataTransferObject.csproj", "{0DE2429E-1014-40BF-84D2-76C44FC5BC83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F630824E-EE67-4B7A-B6A0-BECDE481CD2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F630824E-EE67-4B7A-B6A0-BECDE481CD2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F630824E-EE67-4B7A-B6A0-BECDE481CD2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F630824E-EE67-4B7A-B6A0-BECDE481CD2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{340F37EA-72B7-49DA-A72C-C4E1DD264AED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{340F37EA-72B7-49DA-A72C-C4E1DD264AED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{340F37EA-72B7-49DA-A72C-C4E1DD264AED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{340F37EA-72B7-49DA-A72C-C4E1DD264AED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B4D6234-2CB1-46E3-AFBF-6BE44C3BA324}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B4D6234-2CB1-46E3-AFBF-6BE44C3BA324}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B4D6234-2CB1-46E3-AFBF-6BE44C3BA324}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B4D6234-2CB1-46E3-AFBF-6BE44C3BA324}.Release|Any CPU.Build.0 = Release|Any CPU
+		{676028C4-62BF-4E13-A0E8-B6B14FFB98F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{676028C4-62BF-4E13-A0E8-B6B14FFB98F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{676028C4-62BF-4E13-A0E8-B6B14FFB98F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{676028C4-62BF-4E13-A0E8-B6B14FFB98F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DE2429E-1014-40BF-84D2-76C44FC5BC83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DE2429E-1014-40BF-84D2-76C44FC5BC83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DE2429E-1014-40BF-84D2-76C44FC5BC83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DE2429E-1014-40BF-84D2-76C44FC5BC83}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CB546E24-E4A4-47BB-A642-C32E96345F95}
+	EndGlobalSection
+EndGlobal

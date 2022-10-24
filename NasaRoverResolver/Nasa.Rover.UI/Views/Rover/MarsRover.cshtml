@@ -1,0 +1,88 @@
+﻿@model System.Data.DataTable
+@using System.Data;
+@using System;
+@{
+    ViewBag.Title = "MarsRover";
+    DataTable surfaceData = ViewData["surfaceData"] as DataTable;
+    DataTable csvData = ViewData["csvData"] as DataTable;
+}
+
+<h2>Upload File Mars Rover Instructions(csv)</h2>
+@using (Html.BeginForm("MarsRover", "Rover", null, FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary()
+
+    <div class="form-group">
+        <input type="file" id="dataFile" name="upload" />
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="upload" class="btn btn-default" />
+    </div>
+
+    if(csvData != null)
+    {
+        <table>
+            <thead>
+                <tr>
+                    @foreach(DataColumn col in csvData.Columns)
+                    {
+                        <th width="140px">@col.ColumnName</th>
+                    }
+                </tr>
+            </thead>
+            <tbody>
+                @foreach(DataRow row in csvData.Rows)
+                {
+                    <tr>
+                        @foreach(DataColumn col in csvData.Columns)
+                        {
+                            <td width="140px">@row[col.ColumnName]</td>
+                        }
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    }
+    <br />
+    <br />
+    <h3>Plateau Mars - Active path</h3>
+    if (surfaceData != null)
+    {
+        <br />
+        <div style="position:center">North</div>
+        <table>
+            <thead>
+                <tr>
+                    @foreach (DataColumn col in surfaceData.Columns)
+                    {
+                        <th width="140px">@col.ColumnName</th>
+                    }
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (DataRow row in surfaceData.Rows)
+                {
+                    <tr>
+                        @foreach (DataColumn col in surfaceData.Columns)
+                        {
+                            if (Nasa.Rover.UI.Controllers.RoverController.IsActivePath(col.Ordinal, surfaceData.Rows.IndexOf(row)))
+                            {
+                                <td width="50px" style="background-color:blueviolet">@row[col.ColumnName]</td>
+                            }
+                            else
+                            {
+                                <td width="50px">@row[col.ColumnName]</td>
+                            }
+                        }
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <div style="position:center">South</div>
+    }
+
+}
+
